@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST_RESULT</title>
+    <link rel="stylesheet" href="../styles/test_style.css">
+    <link rel="stylesheet" href="../styles/normalize.min.css">
+</head>
+<body>
+
+    <section>
+
+        <form class="block__test modal-active" action="javascript:check();"  id="modal__block__test">
+            <h1 class="test__heading">Тестирование МАИ</h1>
+
+            <div>
+                <p class="test__question first__question">1. Насколько следующие критерии важны для Вас при выборе направления подготовки?</p>
+            
+                <div class="block__test-answer-option">
+                    <label class="answer__option" for="1.1">Сложность освоения программы</label>
+                    <input id="1.1" type="number" class="input__number" min="1" max="9" required="required">
+                </div>
+        
+                <div class="block__test-answer-option">
+                    <label class="answer__option" for="1.2">Соответстивие возможностям и предпочтениям</label>
+                    <input id="1.2" type="number" class="input__number" min="1" max="9" required="required">
+                </div>
+        
+                <div class="block__test-answer-option">
+                    <label class="answer__option" for="1.3">Заработная плата специалистов</label>
+                    <input id="1.3" type="number" class="input__number" min="1" max="9" required="required">
+                </div>
+        
+                <div class="block__test-answer-option">
+                    <label class="answer__option" for="1.4">Востребованность специалистов на рынке труда</label>
+                    <input id="1.4" type="number" class="input__number" min="1" max="9" required="required">
+                </div>
+            </div>
+
+            <div>
+                <p class="test__question second__question">2. Насколько следующие виды деятельности для Вас интересны?</p>
+            
+                <div class="block__test-answer-option">
+                    <label class="answer__option " for="2.1">Разработка бизнес-приложений, <br> автоматизация бизнес-процессов</label>
+                    <input id="2.1" type="number" class="input__number input__for__two__stroke-answer__option" min="1" max="9" required="required">
+                </div>
+        
+                <div class="block__test-answer-option">
+                    <label class="answer__option" for="2.2">Использование математических методов <br> и моделей в цифровой сфере управления</label>
+                    <input id="2.2" type="number" class="input__number input__for__two__stroke-answer__option" min="1" max="9" required="required">
+                </div>
+        
+                <div class="block__test-answer-option">
+                    <label class="answer__option" for="2.3">Проектирование, внедрение <br> и сопровождение IT-решения</label>
+                    <input id="2.3" type="number" class="input__number input__for__two__stroke-answer__option" min="1" max="9" required="required">
+                </div>
+            </div>
+
+            <div class="form_box">
+                <p class="test__question third__question">3. Оцените, насколько для Вас сложны в освоении следующие темы?</p>
+            
+                <div class="block__test-answer-option">
+                    <label class="answer__option" for="3.1">Компьютерные системы, разработка <br> и внедрение информационных систем</label>
+                    <input id="3.1" type="number" class="rfield input__number input__for__two__stroke-answer__option" min="1" max="9" required="required">
+                </div>
+        
+                <div class="block__test-answer-option">
+                    <label class="answer__option" for="3.2">Математика, теория алгоритмов</label>
+                    <input id="3.2" type="number" class="rfield input__number" min="1" max="9" required="required">
+                </div>
+        
+                <div class="block__test-answer-option">
+                    <label class="answer__option" for="3.3">Экономика, моделирование процессов</label>
+                    <input id="3.3" type="number" class="rfield input__number" min="1" max="9" required="required">
+                </div>
+            </div>
+
+            <button class="button__test__finish" id="get-result" type="submit"> <a class="button__text" >Завершить</a></button>
+
+        </а>
+
+    </section>
+
+    <section>
+        <div class="modal__result js-open-modal" id="results-window">
+            <a href="main_index.html"><img src="../images/close.png " alt="close" class="close js-modal-close"> </a>
+
+            <h1 class="result__heading">Результат</h1>
+
+            <p id="result-pi" class="result__direction">% – Прикладная информатика</p>
+            <p id="result-pmi" class="result__direction">% – Прикладная математика и информатика</p>
+            <p id="result-bi" class="result__direction">% – Бизнес-информатика</p>
+
+            <button class="result__button-close js-modal-close" > <a class="test__close__result" href="main_index.html">Закрыть</a></button>
+        </div>
+    </section>
+
+    <script src="../scripts/script__test.js"></script>
+</body>
+</html>

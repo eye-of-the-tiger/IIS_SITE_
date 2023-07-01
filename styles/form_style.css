@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    background: linear-gradient(135deg, #1612DD 0%, #595CFF 0.01%, #C6F8FF 96.88%);
+    background-repeat: no-repeat;
+    padding: 26px;
+    display: block;
+    height: 100%;
+
+}
+.body__success{
+    text-align: center;
+}
+
+.form__section{
+    /* display: flex; */
+    height: 885px;
+    /* flex-flow: column;
+    flex: 1 1 auto; */
+}
+
+.main {
+    background: #E7EBFF;
+
+    border-radius: 15px;
+    width: 800px;
+    /* height: 635px; */
+
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    padding: 30px 30px;
+
+    transform: translate(-50%, -50%);
+    position: fixed;
+    visibility: hidden;
+    overflow: hidden;
+
+}
+
+.modal-active{
+    z-index: 20;
+    visibility: visible;
+    opacity: 1;
+}
+
+.main__success{
+    height: 545px;
+    
+    top: 50%;
+    left: 50%; 
+
+    transform: translate(-50%, -50%);
+    position: fixed; 
+    /* visibility: hidden;
+    overflow: hidden; */
+}
+
+h1 {
+    margin: 0 0 30px;
+    font-size: 36px;
+    font-weight: 600;
+    opacity: 0.8;
+    text-align: center;
+}
+
+.form {
+    margin: 0 auto;
+    max-width: 605px;
+}
+
+.form__item {
+    margin-bottom: 25px;
+}
+
+.label_input {
+    opacity: 0.8;
+    font-size: 20px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.input {
+    background: #FFFFFF;
+    border: 0;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 0 0 25px;
+    display: block;
+    width: 575px;
+    height: 100%;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid #4D5CE5;
+}
+
+.label_check {
+    font-size: 20px;
+    position: relative;
+    display: block;
+    padding: 1.5px 0 1.5px 45px;
+    margin: 0 0 25px;
+    cursor: pointer;
+}
+
+.check_text {
+    color:rgba(5, 9, 34, 0.7);
+}
+
+.label_check input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.label_check:hover input ~ .checkmark {
+    border: 1px solid #4D5CE5;
+}
+
+.label_check input:checked ~ .checkmark {
+    background-color:#4D5CE5;
+}
+
+checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.label_check input:checked ~ .checkmark:after {
+    content: "";
+    position: absolute;
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border: none;
+    background: #fff;
+    border-radius: 15px;
+}
+
+.checkbox {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.check_agree {
+    font-size: 20px;
+    color:rgba(5, 9, 34, 0.7);
+    margin-bottom: 40px;
+}
+
+button {
+    background: #4D5CE5;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    border: 0;
+    border-radius: 10px;
+    padding: 15px 30px;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: 0px 4px 4px 0px rgba(77, 92, 229, 0.50);
+    transition: .2s;
+}
+.text__close__success{
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    text-decoration: none;
+}

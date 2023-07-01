@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заявка</title>
+    <link rel="stylesheet" href="../styles/normalize.min.css">
+    <link rel="stylesheet" href="../styles/form_style.css">
+</head>
+<body>
+    <section class="form__section">
+        <div class="main modal-active" id="block__form">
+            <h1>Оставить заявку</h1>
+            <form action="" class="block__application">
+                <div class="form">
+                    <div class="form__item">
+                        <label class="label_input" for="fio">ФИО</label>
+                        <input class="input" type="text" name="fio" id="fio" placeholder="Иванов Иван Иванович" required>
+                    </div>
+                    <div class="form__item">
+                        <label class="label_input" for="email">E-mail</label>
+                        <input class="input" type="email" name="email" id="email" placeholder="mail@example.com" required>
+                    </div>
+                    <div class="form__item">
+                        <label class="label_input" for="phone">Контактный телефон</label>
+                        <input class="input" type="tel" name="phone" id="phone" placeholder="+7 (495) 123-45-67" required data-phone-pattern />
+                    </div>
+                    <label class="label_check check_text">
+                        <input class="checkbox" type="checkbox" name="a">
+                        <span class="checkmark"></span>Хочу получать новостную рассылку
+                    </label>
+                    <label class="label_check check_text">
+                        <input class="checkbox" type="checkbox" name="a1">
+                        <span class="checkmark"></span>Хочу записаться на консультацию
+                    </label>
+                    <label class="label_check check_agree">
+                        <input class="checkbox" type="checkbox" checked name="agree">
+                        <span class="checkmark"></span>Я даю согласие на <a href="#"><span style="color: #4D5CE5; font-weight: 600; text-decoration: underline;"> обработку моих данных</span></a>
+                    </label>
+                </div>
+                <button class="button__send__form" id="button__send__form" type="submit">Отправить</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="body__success">
+        <div class="main main__success js-open-modal" id="modal__success">
+            <h1>Заявка принята!</h1>
+            <p>Спасибо!</p>
+            <img src="../images/success_pic.png" alt="success_pic">
+            <button> <a class="text__close__success" href="main_index.html"> Закрыть</a></button>
+        </div>
+    </section>
+
+    <script src="../scripts/tel_script.js"></script>
+    <script src="../scripts/script__form.js"></script>
+    <script src="../scripts/jquery.js"></script>
+</body>
+</html>
