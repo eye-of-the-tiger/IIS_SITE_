@@ -11,8 +11,9 @@ const scrollController = {
     },
   }
 
-const modal_1 = document.getElementById('modal__success');
 
+const modal_1 = document.getElementById('modal__success');
+scrollController.disabledScroll();
 //открытие окна с "Заявка отправлена"
 
 document.querySelector('form.block__application').addEventListener('submit', function(e) {
